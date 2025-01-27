@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket         = "my-eks-mm"
+    bucket         = "tr-project1"
     region         = "ap-south-1"
     key            = "tr-project1/terraform.tfstate"
     dynamodb_table = "Lock-Files"
