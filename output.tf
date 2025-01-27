@@ -9,10 +9,10 @@ output "public_ip" {
 }
 output "vpc_id" {
   description = "The ID of the VPC."
-  value       = module.network.vpc_id
+  value       = aws_vpc.vpc.id
 }
 
 output "subnet_ids" {
   description = "The IDs of the subnets."
-  value       = module.network.subnet_ids
+  value       = aws_subnet.public-subnet.id
 }
